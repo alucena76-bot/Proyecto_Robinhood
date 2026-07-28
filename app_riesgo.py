@@ -57,8 +57,5 @@ def cargar_datos():
             else:
                 st.success(f"**{row['Sector']}**: {row['Porcentaje']}% (Saludable)")
                 
-except Exception as e:
-    st.error(f"Error al conectar con Google Sheets: {e}")
-
 st.markdown("---")
 st.caption("Desarrollado para la gestión estructurada de riesgo en mercados de capitales.")
