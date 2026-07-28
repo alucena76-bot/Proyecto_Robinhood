@@ -31,6 +31,9 @@ def cargar_datos():
     datos = sheet.get_all_records()
     return pd.DataFrame(datos)
 
+    # Llamar a la función para descargar los datos y guardarlos en la variable
+df_sectores = cargar_datos()
+    
     # 3. Interfaz Visual
     col1, col2 = st.columns([2, 1])
 
